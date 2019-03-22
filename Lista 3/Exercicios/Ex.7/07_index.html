@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Exercicio 7</title>
+
+</head>
+<body>
+    <main>
+        <form name="lista" onsubmit="mudar();">
+            <input type="text" name="nome" id="nome">
+            <br>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <input type="submit" value="Mudar">
+        </form>
+    </main>
+
+    <script type="text/javascript">        
+        function Mudar() {
+            var quant = nome.length;
+            var teste = quant;
+            for (var i = 0; quant; i++) {
+                teste = (teste - 1);
+                alert(nome[teste].value);
+            }
+        }
+    </script>
+</body>
+
+</html>

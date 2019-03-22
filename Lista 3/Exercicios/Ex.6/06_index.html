@@ -1,0 +1,37 @@
+<html> 
+<head> 
+
+	<title>Exercio 6</title>
+	<meta charset="utf-8"/>
+</head>
+
+<body> 
+	<script type="text/javascript">
+    
+    var palavra = prompt("insira a palavra para identificar se é um Palindromo","aba");
+    
+    function palavra(palavra){
+      palavra=palavra.toLowerCase().replace(/\s/g,"");
+      palavraReverse=palavra.split("").reverse().toString();
+
+      for (var i = 0; i < ((palavraReverse.length)-1); i++) {
+        palavraReverse=palavraReverse.replace(",","");
+      };
+   
+      if(palavra==palavraReverse){
+        
+        resultado="é um Palindromo";
+      }
+      else{
+      
+        resultado="não é um Palindromo";
+      }
+      
+      document.write("Sua palavra "+resultado);
+    }
+
+    palavra(palavra);
+</script>
+
+</body> 
+</html>

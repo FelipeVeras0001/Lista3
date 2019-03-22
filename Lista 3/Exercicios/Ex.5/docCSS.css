@@ -1,0 +1,8 @@
+form {
+    align-self: center;
+    font-family: Verdana,Tahoma,sans-serif;
+    color: black;
+    font-size: 20px;
+    background-color: green;
+    max-width: 500px;
+}

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title> Exercicio 5</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="regraCSS.css">
+    </head>
+    <body>
+        <main>  <td align="center">
+                <tr>
+                <form  method="post" name="dados" onSubmit="return enviar();" >
+                <label for="login">login: </label>
+                <input type="text" id="login"/><br/>
+                <label for="senha">senha: </label>
+                <input type="password" id="senha"/><br/>
+                <label for="Confirmação">Confirmar senha: </label>
+                <input type="password" id="Confirmacao"/><br/>
+                <input name="Submit" type="submit"  class="formobjects" value="Enviar ">
+            </form>
+                </td>
+                </tr>    
+            <script type"text/javascript">
+                function enviar(){
+                    if((document.dados.login.value=="")||(document.dados.senha.value=="")||(document.dados.Confirmacao.value=="")){
+                        alert("Preencha todos os campos");
+                    }else if((document.dados.senha.value)!=(document.dados.Confirmacao.value)){
+                        alert("Senha incorreta");
+                    }   
+                }            
+            </script>           
+        </main>
+    </body>
+</html>

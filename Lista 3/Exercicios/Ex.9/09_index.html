@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title> Exercicio 9 </title>
+    <script>
+        function Intercalate() {
+            var word1 = document.getElementById('name').value;
+            var word2 = document.getElementById('name2').value;
+            var array = word1.split("");
+            var array2 = word
+            2.split("");
+            var size = word1.length;
+            var mensage= ("");
+            if (size < (word2.length)) {
+                size = word2.length;
+            }
+            for (var i = 0; i < size; i++) {
+                mensage = (mensage + array[i]);
+                mensage = (mensage + array2[i]);
+            }
+            document.getElementById('result').value = mensage;
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <div>
+            <input type="text" name="name" id="name">
+            <br>
+            <input type="text" name="name2" id="name2">
+            <br>
+            <input type="button" onclick="Intercalate()" value="Intercalate">
+            <br>
+            <input type="text" disabled name="result" id="resul">
+        </div>
+
+    </main>
+
+</body>
+
+</html>

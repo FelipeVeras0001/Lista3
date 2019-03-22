@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Exercicio 10 </title>
+    <meta charset="utf-8" />
+    <script>
+        function receive(){
+            var Pnum= document.getElementById('numero1').value;
+            var Snum= document.getElementById('numero2').value;
+            var Tnum= document.getElementById('numero3').value;
+            alert(Pnum);
+            alert(Snum);
+            alert(Tnum);
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form onsubmit="receive();">
+            <input type="number" name="numero1" id="numero1">
+            <br>
+            <input type="number" name="numero2" id="numero2">
+            <br>
+            <input type="number" name="numero3" id="numero3">
+            <br>
+            <input type="submit">
+        </form>
+
+    </main>
+
+</body>
+
+</html>
